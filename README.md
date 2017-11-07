@@ -1,7 +1,7 @@
 # MAD - Basic Python Webservice Setup
 
 ## General Remarks
-I decided to use [Flask-RESTful](http://flask-restful.readthedocs.io/en/latest/) as framework to build our REST-APIs. The implementation is based on this [tutorial](https://blog.miguelgrinberg.com/post/designing-a-restful-api-using-flask-restful) and the respective [python file](https://github.com/miguelgrinberg/REST-tutorial/blob/master/rest-server-v2.py).
+I decided to use [Flask-RESTful](http://flask-restful.readthedocs.io/en/latest/) as framework to build our REST-APIs. The implementation is based on this [tutorial](https://blog.miguelgrinberg.com/post/designing-a-restful-api-using-flask-restful) and the respective [python file](https://github.com/miguelgrinberg/REST-tutorial/blob/master/rest-server-v2.py). To test / play with the server have a look at the [Flask-RESTful Quickstart Guide](http://flask-restful.readthedocs.io/en/latest/quickstart.html).
 
 ## Structure
 - docker/: All files that are needed to deploy the webservice as docker container
