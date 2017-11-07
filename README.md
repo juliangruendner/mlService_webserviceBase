@@ -10,4 +10,7 @@ I decided to use [Flask-RESTful](http://flask-restful.readthedocs.io/en/latest/)
     - ...
 
 ## Deploying the Server
-To deploy the server 
+To deploy the server just clone [this repo](https://github.com/juliangruendner/mlService_webserviceBase/) and change to the directory *docker/* and execute the command *docker-compose up*. The server then will be reachable on port 5000.
+
+## Extending the API
+If you want to extend the functionality of the server just create a new resource in the [resources-directory](src/resources/). Then import the new resource in the [API-file](src/api.py) and add the resource to the *api*-object by using the *add_resource*-function.
