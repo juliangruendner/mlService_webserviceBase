@@ -1,0 +1,4 @@
+api_base:
+  build: .
+  ports:
+    - "5000:5000"
