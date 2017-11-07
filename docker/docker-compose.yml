@@ -1,8 +1,4 @@
 api_base:
-  command: cd mlService_webserviceBase/docker && \
-           chmod +x ./start.sh && \
-           ./start.sh
-           
   build: .
   ports:
     - "5000:5000"
