@@ -22,7 +22,7 @@ After you have started the server you can test it by sending http requests. If t
 - get:
 ```
 curl http://localhost:5000/example
-curl curl http://localhost:5000/example/2
+curl http://localhost:5000/example/2
 ```
 - delete:
 ```
