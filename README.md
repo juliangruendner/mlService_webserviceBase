@@ -16,3 +16,23 @@ in your terminal. The server will then be reachable on port 5000.
 
 ## Extending the API
 If you want to extend the functionality of the server just create a new resource in the [resources-directory](src/resources/). Then import the new resource in the [API-file](src/api.py) and add the resource to the *api*-object by using the *add_resource*-function.
+
+## Testing the server
+After you have started the server you can test it by sending http requests. If the server is running on your local machine you could for instance execute the following [curl](https://curl.haxx.se/)-requests:
+- get:
+```
+curl http://localhost:5000/example
+curl curl http://localhost:5000/example/2
+```
+- delete:
+```
+curl http://localhost:5000/example/1 -X DELETE -v
+```
+- post:
+```
+curl -H "Content-Type: application/json" http://localhost:5000/example -d '{"data":"foo"}' -X POST -v
+```
+- put:
+```
+curl -H "Content-Type: application/json" http://localhost:5000/example/3 -d '{"data":"bar"}' -X PUT -v
+```
